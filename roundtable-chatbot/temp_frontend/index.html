@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Roundtable AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- OPEN CHAT BUTTON -->
+    <button id="askMeetingBtn" class="chat-fab">
+        <span class="sparkle">✦</span>
+        Chat with bot
+    </button>
+
+
+    <!-- CHATBOT -->
+    <div id="chatbot" class="chatbot">
+
+        <!-- HEADER -->
+        <div class="chat-header">
+
+            <div class="header-left">
+                <div class="bot-icon">✦</div>
+
+                <div>
+                    <div class="bot-name">Roundtable AI</div>
+                    <div class="bot-status">
+                        <span class="status-dot"></span>
+                        Meeting Copilot
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-actions">
+                <button id="minimizeBtn" class="header-btn">−</button>
+                <button id="closeBtn" class="header-btn">×</button>
+            </div>
+
+        </div>
+
+
+        <!-- WELCOME -->
+        <div id="welcomeSection" class="welcome">
+
+            <div class="welcome-icon">✦</div>
+
+            <h2>How can I help?</h2>
+
+            <p>
+                Ask me about the meeting, transcript,
+                speakers, decisions or anything else.
+            </p>
+
+            <div class="quick-actions">
+
+                <button
+                    class="quick-action"
+                    data-question="Summarize the meeting">
+                    📝 Summarize meeting
+                </button>
+
+                <button
+                    class="quick-action"
+                    data-question="What are the key points of the meeting?">
+                    ✨ Key points
+                </button>
+
+                <button
+                    class="quick-action"
+                    data-question="What are the action items and who is responsible?">
+                    ✓ Action items
+                </button>
+
+                <button
+                    class="quick-action"
+                    data-question="What decisions were made in the meeting?">
+                    💡 Decisions
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CHAT MESSAGES -->
+        <div id="chatMessages" class="chat-messages"></div>
+
+
+        <!-- TYPING -->
+        <div id="typing" class="typing">
+            <span></span>
+            <span></span>
+            <span></span>
+            AI is thinking...
+        </div>
+
+
+        <!-- INPUT -->
+        <div class="chat-input-area">
+
+            <input
+                id="chatInput"
+                type="text"
+                placeholder="Ask anything about the meeting..."
+                autocomplete="off"
+            >
+
+            <button id="sendBtn" class="send-btn">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
